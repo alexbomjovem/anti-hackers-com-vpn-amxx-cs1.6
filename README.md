@@ -42,4 +42,4 @@ O plugin pode ser instalado igualmente qualquer outro plugin.
 Para mais detalhes sobre o plugin e o processo de instalação, por favor, assista esse vídeo:
 * [Plugin Ban Quarentena contra hackers VPN](https://youtu.be/j-nDFCvLu58)
 * Necessario o download  hackdetector contra speed  hackers.
-*[download hackdetector ](https://drive.google.com/file/d/1de9KXYXjIVPjWqWBdSVUNOJZtHveFss2/view?usp=sharing)
+*[download hackdetector ](https://drive.google.com/file/d/1DlNAZ03gU143FvQRG9V96wylTxNWCPfU/view?usp=sharing)
