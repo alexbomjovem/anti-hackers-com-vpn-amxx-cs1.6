@@ -1,38 +1,43 @@
-// Plugins contra hackers VPN Temporario 
+## Plugin temporário contra hackers VPN
 
-quero disponibilizar um Plugins 
-contra esses hackers VPN que toma ban 10 segundos volta miando 
-o servidor tirei meu dia hoja para fazer isso acredito que vai ajudar muitos 
-donos de servidores temporariamente 
-
-como funciona 
+Quero disponibilizar alguns plugins contra esses hackers [VPN](https://pt.wikipedia.org/wiki/Rede_privada_virtual) 
+que tomam ban e voltam 10 segundos depois miando o servidor. Tirei meu dia para fazer isso
+e acredito que vai ajudar muitos donos de servidores temporariamente.
 
 
-você instala no seu servidor e deixa ele so vai trabalhar com cs pirata
-como o modo Quarentena Desativado, ele vai salva o id de todos cs pirata que entra 
-pela primeira vez no seu servidor para quando o modo tive ativado vai ignora cs Piratas salvos.
+### Como funciona
 
-como agem O Plugin com modo ativado  
- ele não salva dados de clintes piratas novos
- então quando um cliente novo connecta ele vai detectar ele 
- e quando nascer so vai poder jogar na faca ate um admin poder libera o Plyers 
- 
- resumindo vai evita que o jogador com vpn esvazie seu servidor.
- 
- OBS
-
- esse plugins ignora cs steam 
- so trabalha com cs pirata 
-
-E O Plugins limpa os dados de jogadores 30 dias sem connecta 
-pra não lota o banco de dados
+Você instala no seu servidor e deixa ele rodando. O plugin só vai verificar os jogadores
+enquanto o `Modo Quarentena` estiver `ativado`. Caso contrário, o plugin irá salvar os ids 
+de todos cs piratas que entrarem no servidor pela primeira vez.
 
 
+### Modo Quarentena
 
-Banco de dados onde vai ser salvo todos os Players
+Uma vez que o `Modo Quarentena` esteja ativado, o plugin vai liberar os jogadores 
+previamente salvos e os novos jogadores que conectarem a partir desse ponto ficarão 
+sem permissão para usar armas até que algum administrador online liberem eles pelo menu.
 
-addons\amxmodx\data\file_vault\Anti-VPN
+Isso vai evitar que o jogador banido volte com VPN esvazie seu servidor.
 
-comandos no say  /vpn
 
-Acesso ao Plugins Admins letra "h"
+### Comandos
+
+Comando | Descrição
+--------|-----------
+/vpn | Abre o menu de configuração do plugin. (apenas para administradores com acesso `h`)
+
+
+### Observações
+
+* Esse plugin ignora jogadores steams
+* O plugin limpa automaticamente os dados de jogadores que não conectaram nos últimos 30 dias
+* Os dados do plugin ficará salvo no seguinte diretório:
+    * `addons\amxmodx\data\file_vault\Anti-VPN`
+
+
+### Instalação
+
+O plugin pode ser instalado igualmente qualquer outro plugin.
+Para mais detalhes sobre o plugin e o processo de instalação, por favor, assista esse vídeo:
+* [Plugin Ban Quarentena contra hackers VPN](https://youtu.be/j-nDFCvLu58)
