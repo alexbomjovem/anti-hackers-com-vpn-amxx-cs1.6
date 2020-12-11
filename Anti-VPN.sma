@@ -37,28 +37,28 @@ public plugin_init()
 // https://www.amxmodx.org/api/amxmodx/client_authorized
 public client_authorized(id)
 {
-    new xGetAuth[64]
-    get_user_authid(id, xGetAuth, charsmax(xGetAuth))
+	new xGetAuth[64];
+	get_user_authid(id, xGetAuth, charsmax(xGetAuth));
 
 	g_isNonSteam[id] = 0;
 
-    if(equal(xGetAuth, "STEAM_", 6) )
-        return PLUGIN_HANDLED;
+	if(equal(xGetAuth, "STEAM_", 6) )
+		return PLUGIN_HANDLED;
 
-    if(equal(xGetAuth, "VALVE_", 6) )
-    {
+	if(equal(xGetAuth, "VALVE_", 6) )
+	{
 		new szIP[6];
-		get_user_ip ( id, szIP, charsmax(szIP) , 1 )
+		get_user_ip( id, szIP, charsmax(szIP), 1 );
 
 		g_players[id] = 1;
-		load_data(id)
+		load_data(id);
 
 		// salva se o jogador é non steam para não
 		// precisar verificar o id novamente
 		g_isNonSteam[id] = 1;
-    }
+	}
 
-    return PLUGIN_HANDLED;
+	return PLUGIN_HANDLED;
 }
 
 public client_disconnected(id)
@@ -129,9 +129,7 @@ public AdminMenuHandlervpn(id, iMenu, iItem)
 			g_faca = g_faca ? false : true
 			
 			if(g_faca)
-			{               
-                {               
-			{               
+			{        
 				client_print_color( 0, print_team_default, "^4[%s] ^3 %s ^1 Ativou ^4Modo Quarentena ^1no servidor.", PREFIXCHAT, xPName)
 				enable_event(g_desativaCurWeapon);
 			}
